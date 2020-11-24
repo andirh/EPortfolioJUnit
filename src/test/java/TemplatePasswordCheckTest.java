@@ -25,12 +25,14 @@ public class TemplatePasswordCheckTest {
 
     @Test
     public void invalidNameAndPasswordReturnsFalse(){
-        assertThat(cut.checkLogin(invalidName, invalidPassword)).isFalse();
+        Assert.assertFalse(cut.checkLogin(invalidName, invalidPassword));
+//        assertThat(cut.checkLogin(invalidName, invalidPassword)).isFalse();
     }
 
     @Test
     public void invaldNameAndValidPasswordReturnsTrue(){
         Assert.assertFalse(cut.checkLogin(invalidName, password));
+//        assertThat(cut.checkLogin(invalidName, password)).isFalse();
     }
 
 }
