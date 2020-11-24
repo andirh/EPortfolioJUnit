@@ -8,7 +8,7 @@ public class TemplateCSVReader {
     private final String EMAIL = "src/main/resources/email.csv";
 
     public String[] getCSVHeader() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(EMAIL))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(JACOCO))) {
             return reader.readLine().split(",");
         } catch (IOException ex) {
             ex.printStackTrace();

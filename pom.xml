@@ -41,7 +41,6 @@
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>0.8.6</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -83,12 +82,8 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
-
                 </executions>
             </plugin>
-
         </plugins>
     </build>
-
-    
 </project>
